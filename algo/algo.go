@@ -4,7 +4,7 @@ func KMP(s string, sub string) bool {
 	p := make([]int, len(sub))
 	j, i := 0, 1
 
-	for i < len(sub) {
+	for i < len(sub) { //цикл форми рования массива "р"
 		if sub[j] == sub[i] {
 			p[i] = j + 1
 			i++
@@ -22,7 +22,7 @@ func KMP(s string, sub string) bool {
 	m, n := len(sub), len(s)
 	i, j = 0, 0
 
-	for i < n {
+	for i < n { //поиск подстроки (образа) в тексте
 		if s[i] == sub[j] {
 			i++
 			j++
@@ -37,6 +37,17 @@ func KMP(s string, sub string) bool {
 			}
 		}
 	}
+
+	return false
+}
+
+func BHR(s string, sub string) bool {
+
+	//m := len(sub)
+	// d := make(map[string]int, m)
+	// for i, l := range sub {
+
+	// }
 
 	return false
 }
