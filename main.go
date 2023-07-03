@@ -6,11 +6,8 @@ import (
 )
 
 func main() {
-	// sub := "lilila"
-	// s := "lililo lilila"
-	//res := algo.KMP(s, sub)
-	//fmt.Println(res)
-	mas := algo.NewSet[string](4)
-	r := mas.Add("hello")
-	fmt.Println(r)
+	sub := "dannie"
+	s := "cyberdannie"
+	res := algo.BHR(s, sub)
+	fmt.Println(res)
 }
